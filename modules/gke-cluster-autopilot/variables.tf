@@ -69,9 +69,10 @@ variable "enable_features" {
     binary_authorization = optional(bool, false)
     cost_management      = optional(bool, false)
     dns = optional(object({
-      provider = optional(string)
-      scope    = optional(string)
-      domain   = optional(string)
+      provider     = optional(string)
+      scope        = optional(string)
+      domain       = optional(string)
+      additive_dns = optional(string)
     }))
     database_encryption = optional(object({
       state    = string
